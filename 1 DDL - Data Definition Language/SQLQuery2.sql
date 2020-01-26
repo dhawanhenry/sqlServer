@@ -1,0 +1,28 @@
+CREATE TABLE emp(
+	emp_id INT PRIMARY KEY,
+	l_name VARCHAR(50) NOT NULL,
+	f_name VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE emp1(
+	emp_id INT,
+	l_name VARCHAR(50) NOT NULL,
+	f_name VARCHAR(50) NOT NULL,
+	CONSTRAINT emp_pk PRIMARY KEY (emp_id)
+);
+
+CREATE TABLE emp2(
+	l_name VARCHAR(50) NOT NULL,
+	f_name VARCHAR(50) NOT NULL,
+	salary MONEY,
+	CONSTRAINT emp_pk1 PRIMARY KEY (l_name, f_name)
+);
+
+CREATE TABLE emp4(
+	emp_id INT NOT NULL,
+	l_name VARCHAR(50) NOT NULL,
+	f_name VARCHAR(50) NOT NULL,
+);
+
+ALTER TABLE emp4
+ADD CONSTRAINT emp_primaryKey PRIMARY KEY (emp_id);
