@@ -1,6 +1,6 @@
-SELECT * FROM emp;
+Use test1;
 
-DROP TABLE emp;
+SELECT * FROM emp;
 
 CREATE TABLE emp(
 	EmployeeID NUMERIC(4) NOT NULL,
@@ -64,3 +64,5 @@ ALTER TABLE emp
 			'Chennai'
 	
 			);
+
+
