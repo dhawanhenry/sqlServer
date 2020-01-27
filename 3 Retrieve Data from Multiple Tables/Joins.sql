@@ -110,6 +110,10 @@ FULL JOIN orders
 ON emp.EmployeeID = orders.EmployeeID
 ORDER BY emp.EmployeeID;
 
+SELECT * FROM emp;
+
+SELECT * FROM orders;
+
 
 
 
